@@ -1,0 +1,10 @@
+name = "YOUR_WORKER_NAME"
+main = "src/index.js"
+compatibility_date = "2022-09-02"
+
+account_id = "YOUR_ACCOUNT_ID"
+workers_dev = true
+
+[[r2_buckets]]
+binding = 'bucket'
+bucket_name = 'YOUR_BUCKET_NAME'
