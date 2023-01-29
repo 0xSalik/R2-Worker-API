@@ -10,10 +10,10 @@ export default {
     }
     switch (request.method) {
       case "PUT":
-        await env.cdn.put(key, request.body);
+        await env.bucket.put(key, request.body);
         return new Response(`Put ${key} successfully!`);
       case "GET":
-        const object = await env.cdn.get(key);
+        const object = await env.bucket.get(key);
 
         if (object === null) {
           return new Response("Object Not Found", { status: 404 });
@@ -27,7 +27,7 @@ export default {
           headers,
         });
       case "DELETE":
-        await env.cdn.delete(key);
+        await env.bucket.delete(key);
         return new Response("Deleted!");
 
       default:

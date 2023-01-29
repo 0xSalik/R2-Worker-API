@@ -18,16 +18,13 @@ This worker acts as an api for your R2 bucket.
 
 _Replace `<auth-key>` with your actual key (remove the angle brackets), and `example.workers.dev` with your own worker route._
 
-#### Uploading binary data using curl
-
-curl https://example.workers.dev/<location> -X PUT --header 'X-Custom-Auth-Key: <auth-key>' --data-binary 'test'
-
-#### Uploading files using curl
-
-curl https://example.workers.dev/file.ext -X PUT --header 'X-Custom-Auth-Key: <auth-key>' --upload-file ./file.ext
-
-#### Deleting a file using curl
-
-curl https://example.workers.dev/file.ext -X DELETE --header 'X-Custom-Auth-Key: <auth-key>'
+```bash
+# Uploading binary data using curl
+$ curl https://example.workers.dev/<location> -X PUT --header 'X-Custom-Auth-Key: <auth-key>' --data-binary 'test'
+# Uploading files using curl
+$ curl https://example.workers.dev/file.ext -X PUT --header 'X-Custom-Auth-Key: <auth-key>' --upload-file ./file.ext
+# Deleting a file using curl
+$ curl https://example.workers.dev/file.ext -X DELETE --header 'X-Custom-Auth-Key: <auth-key>'
+```
 
 That's it. You can just use curl or write an app in a language of your choice to interact with the api.
