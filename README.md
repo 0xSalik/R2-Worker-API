@@ -8,9 +8,9 @@ This worker acts as an api for your R2 bucket.
 
 - Create an authentication key and store it in a KV Namespace with the name `AUTH_KEY_SECRET`. You will use this key to authenticate with your api.
 
-- Edit the `wrangler.toml` file and add your worker name, account id and bucket name to it (you can get your account id with `$ wrangler whoami`).
-
 - Install wrangler and sign-in ([Read official docs for instructions](https://developers.cloudflare.com/workers/wrangler/install-and-update/)).
+
+- Edit the `wrangler.toml` file and add your worker name, account id and bucket name to it (you can get your account id with `$ wrangler whoami`).
 
 - Deploy the worker with `$ wrangler publish`.
 
