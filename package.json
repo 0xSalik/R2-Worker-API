@@ -1,6 +1,7 @@
 {
   "name": "cdn-worker",
-  "version": "0.0.0",
+  "author": "Salik Khan",
+  "version": "1.0.0",
   "devDependencies": {
     "@cloudflare/workers-types": "^3.16.0",
     "eslint": "^8.23.0",
