@@ -1,5 +1,7 @@
 ## WORKER TO INTERACT WITH CLOUDFLARE R2 (S3) BUCKET AS AN API.
 
+For a full tutorial on how to set this up you can check my [blog post](https://blog.salikkhan.com/how-to-set-up-a-cdn-using-cloudflare-r2-and-workers/).
+
 This worker acts as an client-facing api for your R2 bucket. You can use it to upload or modify files on your bucket directly using an authentication key and serve files without having to authenticate, basically use it as a CDN.
 
 ## Setup
