@@ -29,7 +29,7 @@ async fetch(request, env, context) {
         }
         object.writeHttpMetadata(headers);
         headers.set("etag", object.httpEtag);
-        headers.append("Cache-Control", "public, max-age=31536000");
+        headers.append("Cache-Control", "s-maxage=31536000");
         response = new Response(object.body, {
           headers,
         });
